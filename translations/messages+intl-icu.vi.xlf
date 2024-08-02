@@ -2292,19 +2292,19 @@ và <a href="{privacyUrl}" target="_blank" referrerpolicy="no-referrer">
       </trans-unit>
       <trans-unit id="jlIBMjN" resname="transfer.room.success">
         <source>transfer.room.success</source>
-        <target state="needs-translation">Konferenz erfolgreich übertragen</target>
+        <target state="needs-translation">Hội nghị được chuyển thành công</target>
       </trans-unit>
       <trans-unit id="kGZ3mX4" resname="transfer.room.confirm">
         <source>transfer.room.confirm</source>
-        <target state="needs-translation">Wollen Sie diese Konferenz wirklich auf diesem Nutzer übertragen? Sie haben anschließend keinen Zugriff mehr auf diese Konferenz, sondern sind nur noch als Teilnehmender in dieser Konferenz.</target>
+        <target state="needs-translation">Bạn có thực sự muốn phát sóng hội nghị này cho người dùng này không? Sau đó, bạn sẽ không còn quyền truy cập vào hội nghị này nữa mà sẽ chỉ tham gia hội nghị này với tư cách là người tham gia.</target>
       </trans-unit>
       <trans-unit id="l6ckT1t" resname="transfer.room.start">
         <source>transfer.room.start</source>
-        <target state="needs-translation">Konferenz auf diesem Nutzer übertragen</target>
+        <target state="needs-translation">Chuyển hội nghị cho người dùng này.</target>
       </trans-unit>
       <trans-unit id="z3v5nOx" resname="transfer.room.error">
         <source>transfer.room.error</source>
-        <target state="needs-translation">Fehler. Die Konfernz konnte nicht übertragen werden.</target>
+        <target state="needs-translation">Sai lầm. Hội nghị không thể được phát sóng.</target>
       </trans-unit>
     </body>
   </file>

@@ -4,20 +4,20 @@
         <i class="fa-solid fa-globe"></i> {{ app.request.locale|upper }}
     </a>
     <div class="dropdown-menu language-dropdown-menue">
-        {% if theme == false or (theme is not null and 'de' in theme.profileAllowLanguages  ) %}
-            <a class="dropdown-item" href="{{ path("dashboard", {"_locale": "de"}) }}">Deutsch</a>
-        {% endif %}
         {% if theme == false  or (theme is not null and 'en' in theme.profileAllowLanguages  ) %}
             <a class="dropdown-item" href="{{ path("dashboard", {"_locale": "en"}) }}">English</a>
+        {% endif %}
+        {% if theme == false  or (theme is not null and 'vi' in theme.profileAllowLanguages  ) %}
+            <a class="dropdown-item" href="{{ path("dashboard", {"_locale": "vi"}) }}">Tiếng Việt</a>
+        {% endif %}
+        {% if theme == false or (theme is not null and 'de' in theme.profileAllowLanguages  ) %}
+            <a class="dropdown-item" href="{{ path("dashboard", {"_locale": "de"}) }}">Deutsch</a>
         {% endif %}
         {% if theme == false  or (theme is not null and 'fr' in theme.profileAllowLanguages  ) %}
             <a class="dropdown-item" href="{{ path("dashboard", {"_locale": "fr"}) }}">Français</a>
         {% endif %}
         {% if theme == false  or (theme is not null and 'es' in theme.profileAllowLanguages  ) %}
             <a class="dropdown-item" href="{{ path("dashboard", {"_locale": "es"}) }}">Español</a>
-        {% endif %}
-        {% if theme == false  or (theme is not null and 'vi' in theme.profileAllowLanguages  ) %}
-            <a class="dropdown-item" href="{{ path("dashboard", {"_locale": "vi"}) }}">Tiếng Việt</a>
         {% endif %}
         {% if theme == false  or (theme is not null and 'zh' in theme.profileAllowLanguages  ) %}
             <a class="dropdown-item" href="{{ path("dashboard", {"_locale": "zh"}) }}">中国人</a>

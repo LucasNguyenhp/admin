@@ -2259,35 +2259,35 @@
       </trans-unit>
       <trans-unit id="HXqNNC9" resname="room.error.noAccessAllowedToManyParticipantsText">
         <source>room.error.noAccessAllowedToManyParticipantsText</source>
-        <target state="needs-translation">Das maximale Limit der Teilnehmenden in dieser Konferenz ist erreicht. Bitte versuchen Sie es zu einem späteren Zeitpukt erneut oder kontaktieren Sie Ihren Helpdesk</target>
+        <target state="needs-translation">The maximum limit of participants in this conference has been reached. Please try again later or contact your helpdesk</target>
       </trans-unit>
       <trans-unit id="rml7Shn" resname="enterprise.settings.header.tags">
         <source>enterprise.settings.header.tags</source>
-        <target state="needs-translation">Auswählbare Kategorien</target>
+        <target state="needs-translation">Selectable categories</target>
       </trans-unit>
       <trans-unit id="8RH..y9" resname="options.chat">
         <source>options.chat</source>
-        <target state="needs-translation">Chat anzeigen</target>
+        <target state="needs-translation">Show chat</target>
       </trans-unit>
       <trans-unit id="4c8IxLG" resname="options.toggleFilmstripe">
         <source>options.toggleFilmstripe</source>
-        <target state="needs-translation">Filmstripe ein/ausblenden</target>
+        <target state="needs-translation">Show/hide filmstrip</target>
       </trans-unit>
       <trans-unit id="jlIBMjN" resname="transfer.room.success">
         <source>transfer.room.success</source>
-        <target state="needs-translation">Konferenz erfolgreich übertragen</target>
+        <target state="needs-translation">Conference transferred successfully</target>
       </trans-unit>
       <trans-unit id="kGZ3mX4" resname="transfer.room.confirm">
         <source>transfer.room.confirm</source>
-        <target state="needs-translation">Wollen Sie diese Konferenz wirklich auf diesem Nutzer übertragen? Sie haben anschließend keinen Zugriff mehr auf diese Konferenz, sondern sind nur noch als Teilnehmender in dieser Konferenz.</target>
+        <target state="needs-translation">Do you really want to broadcast this conference to this user? You will then no longer have access to this conference, but will only be in this conference as a participant.</target>
       </trans-unit>
       <trans-unit id="l6ckT1t" resname="transfer.room.start">
         <source>transfer.room.start</source>
-        <target state="needs-translation">Konferenz auf diesem Nutzer übertragen</target>
+        <target state="needs-translation">Transfer conference to this user</target>
       </trans-unit>
       <trans-unit id="z3v5nOx" resname="transfer.room.error">
         <source>transfer.room.error</source>
-        <target state="needs-translation">Fehler. Die Konfernz konnte nicht übertragen werden.</target>
+        <target state="needs-translation">Mistake. The conference could not be broadcast.</target>
       </trans-unit>
     </body>
   </file>

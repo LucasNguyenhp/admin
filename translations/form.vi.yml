@@ -1,7 +1,7 @@
 label.konferenzId: ID phòng họp
 label.email: Địa chỉ Email
 label.name: Tên
-label.teilnehmerEmailhinzufuegen: E-Mail-Adressen von neuen TEILNEHMERN eingeben
+label.teilnehmerEmailhinzufuegen: Nhập địa chỉ email của NGƯỜI THAM GIA mới
 label.teilnehmerSpeichern: Gửi email lời mời
 label.emailModerator: Nhập địa chỉ email công ty
 help.emailTextfeld: Nhiều địa chỉ email có thể được thêm vào cùng một lúc. Mỗi địa chỉ email phải được viết trên một dòng mới.
@@ -12,7 +12,7 @@ label.start: Bắt đầu
 label.dauerKonferenz: Thời lượng của hội nghị
 label.nurRegistriertenutzer: Chỉ những người đã đăng ký mới được phép tham gia hội nghị
 label.speichern: Lưu
-label.allowMaybeOption: '"Vielleicht"-Option anbieten'
+label.allowMaybeOption: Đưa ra lựa chọn có thể
 option.15min: 15 Phút
 option.30min: 30 Phút
 option.45min: 45 Phút
@@ -34,37 +34,37 @@ option.420min: 7 Giờ
 option.450min: 7:30 Giờ
 option.480min: 8 Giờ
 option:
-  monday: Montag
-  tuesday: Dienstag
-  wednesday: Mittwoch
-  thursday: Donnerstag
-  friday: Freitag
-  saturday: Samstag
-  sunday: Sonntag
-  weekly: Wöchentlich
-  daily: Täglich
-  montly: Monatlich
-  yearly: Jährlich
-  montlyRelative: Monatlich flexibel festlegen
-  yearlyRelative: Jährlich flexibel festlegen
-  first: Erster
-  second: Zweiter
-  third: Dritter
-  fourth: Vierter
-  fifth: Fünfter
-  last: Letzter
-  january: Januar
-  february: Februar
-  march: März
-  april: April
-  may: Mai
-  june: Juni
-  july: Juli
-  august: August
-  septembre: September
-  octobre: Oktober
-  novembre: November
-  decembre: Dezember
+  monday: Thứ hai
+  tuesday: Thứ ba
+  wednesday: Thứ tư
+  thursday: Thứ năm
+  friday: Thứ 6
+  saturday: Thứ bảy
+  sunday: Chủ nhật
+  weekly: Hàng tuần
+  daily: Hàng ngày
+  montly: Hàng tháng
+  yearly: Hàng năm
+  montlyRelative: Đặt lịch linh hoạt hàng tháng
+  yearlyRelative: Đặt lịch linh hoạt hàng năm
+  first: Đầu tiên
+  second: Thứ hai
+  third: Thứ ba
+  fourth: Thứ tư
+  fifth: Thứ năm
+  last: Cuối cùng
+  january: Tháng một
+  february: Tháng hai
+  march: Tháng ba
+  april: Tháng tư
+  may: Tháng năm
+  june: Tháng sáu
+  july: Tháng bảy
+  august: Tháng tám
+  septembre: Tháng chín
+  octobre: Tháng mười
+  novembre: Tháng mười một
+  decembre: Tháng mười hai
   user: Im User Claim
   root: Im Root Claim
 lable.serverUrl: Máy chủ Jitsi URL

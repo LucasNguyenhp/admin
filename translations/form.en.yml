@@ -6,7 +6,7 @@ label.teilnehmerSpeichern: Send invitation email
 label.emailModerator: Enter email address of organizer
 help.emailTextfeld: Multiple email addresses can be added at once. Each email address has to be written into a new line.
 label.organisatorhinzufuegen: Add organizer
-label.serverKonferenz: Jitsi meet server
+label.serverKonferenz: Meetup server
 label.konferenzName: Conference name
 label.start: Start
 label.dauerKonferenz: Conference duration
@@ -67,13 +67,13 @@ option:
   decembre: December
   user: In user claim
   root: In root claim
-lable.serverUrl: Jitsi Meet server url
+lable.serverUrl: Meetup server url
 label.appId: App ID
 label.appSecret: App secret
 label.scheduleMeeting: Create an appointment poll
 help:
-  serverUrl: Enter without "https://" (such as meet.jit.si)
-  featureEnalbeByJwt: The plugin "Enable Feature By JWT" has to be enabled on the jitsi meet server. If not, JWT will not be recognized correctly from the server
+  serverUrl: Enter without "https://" (such as meet.saza.au)
+  featureEnalbeByJwt: The plugin "Enable Feature By JWT" has to be enabled on the meetup server. If not, JWT will not be recognized correctly from the server
   teilnehmerEmailhinzufuegenModerator: Multiple email addresses can be added at once. Each email address has to be written into a new line.
   serverName: Please enter the server name. This will be shown to the participants.
   secondEmail: All emails to my default email address should be sent to this additional email addresses (comma-separated).
@@ -84,9 +84,9 @@ help:
   disallowFirefox: Firefox browser is disabled. All participants joining with firefox will be redirected to a chromium based browser.
   enforceE2e: End-to-end encryption security is enforced in every conference on this Jitsi server.
   allowIp: Only the specified IP address or IP ranges are allowed to join the conference. IP ranges must be specified in the notation 10.10.10.10/24. Multiple IPs or ranges can be entered separated by commas.
-  jitsiEventSyncUrl: Here you can specify another Jitsi admin who has saved the corresponding Jitsi event syncs for SIP requests. Only the base URL needs to be specified. This function requires Jitsi-admin version >0.77.x
-  disableFilmstripe: Disable filmstrip in Jitsi
-  disableChat: Deactivate and hide chat in Jitsi
+  jitsiEventSyncUrl: Here you can specify another admin who has saved the corresponding event syncs for SIP requests. Only the base URL needs to be specified. This function requires Jitsi-admin version >0.77.x
+  disableFilmstripe: Disable filmstrip
+  disableChat: Deactivate and hide chat
   disableWhiteboard: Disable whiteboard during a conference
   disableEtherpad: Deactivate Etherpad during a conference
   prefixRoomUidWithHash: The conference uid is prefixed with the server slug and the server ID as a hash. This can be used to distinguish between different V-servers in the nginx web server.
@@ -141,7 +141,7 @@ label:
   serverName: Server Name
   lobby: Activate lobby
   secondEmail: CC Email
-  profilImage: Profile picture (Shown in Jitsi-Meet meeting)
+  profilImage: Profile picture (Shown in meeting)
   corsHeader: CORS- or frame-ancestor header
   tag: Category
   serverBackgroundImage: Server Background Image

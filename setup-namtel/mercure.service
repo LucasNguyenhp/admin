@@ -1,0 +1,21 @@
+#/etc/systemd/system/mercure.service
+[Unit]
+     Description=Mercure.Rocks service
+     After=network.target
+     StartLimitBurst=5
+     StartLimitIntervalSec=33
+
+
+     [Service]
+     Type=simple
+     WorkingDirectory=/bin/mercure
+     Environment= MERCURE_JWT_SECRET='637e7f71da8343b34f5073d2460b92e6' SERVER_NAME=':4343'
+#     Environment= MERCURE_PUBLISHER_JWT_KEY='637e7f71da8343b34f5073d2460b92e6' MERCURE_SUBSCRIBER_JWT_KEY='637e7f71da8343b34f5073d2460b92e6' SERVER_NAME=':3000'
+     ExecStart=/bin/mercure/mercure run -config /etc/mercure/Caddyfile
+     StandardOutput=file:/var/log/mercure.log
+     StandardError=file:/var/log/mercure.log
+     Restart=always
+     RestartSec=5
+
+     [Install]
+     WantedBy=multi-user.target

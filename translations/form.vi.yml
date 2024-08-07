@@ -112,58 +112,58 @@ label:
   featureEnalbeByJwt: Tính năng "Token - JWT" được kích hoạt trên máy chủ
   dissallowScreenshareGlobal: Chỉ người kiểm duyệt mới có thể chia sẻ màn hình
   dissallowPrivateMessage: Chỉ người kiểm duyệt mới có thể gửi tin nhắn riêng tư cho người tham dự
-  puplicRoom: Einladungslinks freischalten
+  puplicRoom: Mở khóa các liên kết lời mời
   showRoomOnJoinpage: Hiển thị hội nghị trên trang tham gia
   subscribe: Đăng nhập
   vorname: Tên
   nachname: Họ
   maxParticipants: Số lượng người tham gia tối đa cho phép
   waitinglist: Kích hoạt danh sách chờ
-  teilnehmerEmailhinzufuegenModerator: E-Mail-Adressen von neuen MODERATOREN eingeben
-  weekday: Wochentag
-  repetation: Endet nach x Terminen
-  repeatType: Serienmuster
-  repeaterDays: Nach x Tagen wiederholen
-  repeaterWeeks: Nach x Wochen wiederholen
-  repeatMontly: Nach x Monaten wiederholen
-  repeatYearly: Nach x Jahren wiederholen
-  montlyRelativeNumber: Wie vielter Wochentag im Monat
-  montlyRelativeWeekday: Wochentag
-  montlyRelativeMonth: Monat
-  repeaterRemoved: Nur dieses Element bearbeiten (nicht die gesamte Serie)
-  persistantRoom: Diese Konferenz hat kein Datum, sondern ist immer verfügbar.
-  totalOpenRooms: Teilnehmendenliste deaktivieren, beitreten über Teilnehmenden-Link
-  totalOpenRoomsOpenTime: Raumöffnungszeit
-  addressgroupName: Gruppenname
-  addressgroupMember: Gruppenmitglieder auswählen
-  jwtModeratorPosition: Moderatorposition im JWT Token
-  timezone: Zeitzone
-  serverName: Servername
-  lobby: Lobby aktivieren
-  secondEmail: CC-E-Mail
-  profilImage: Profilbild (Wird im Jitsi-Meet Meeting angezeigt)
-  corsHeader: CORS-Header oder frame-ancestor Header
-  tag: Kategorie
-  serverBackgroundImage: Statitisches Hintergrund für die Joinseite
+  teilnehmerEmailhinzufuegenModerator: Nhập địa chỉ email của MODERATORS mới
+  weekday: Ngày trong tuần
+  repetation: Kết thúc sau x ngày
+  repeatType: Kiểu lặp lại
+  repeaterDays: Lặp lại sau x ngày
+  repeaterWeeks: Lặp lại sau x tuần
+  repeatMontly: Lặp lại sau x tháng
+  repeatYearly: Lặp lại sau x năm
+  montlyRelativeNumber: Số ngày trong tháng
+  montlyRelativeWeekday: Số ngày trong tuần
+  montlyRelativeMonth: Tháng
+  repeaterRemoved: Chỉ chỉnh sửa mục này (không phải toàn bộ)
+  persistantRoom: Hội nghị không có ngày cụ thể (cố định luôn có sẵn).
+  totalOpenRooms: Vô hiệu hóa danh sách người tham gia, qua liên kết người tham gia
+  totalOpenRoomsOpenTime: Giờ mở phòng
+  addressgroupName: Tên nhóm
+  addressgroupMember: Chọn thành viên nhóm
+  jwtModeratorPosition: Vị trí người điều hành trong JWT Token
+  timezone: Múi giờ
+  serverName: Tên máy chủ
+  lobby: Kích hoạt sảnh
+  secondEmail: CC-EMail
+  profilImage: Ảnh (hiển thị trong cuộc họp)
+  corsHeader: CORS-Header
+  tag: Nhãn
+  serverBackgroundImage: Thống kê tham gia
   jigasiApiUrl: Jigasi ConferenceMapper-URL
-  jigasiNumberUrl: Jigasi Einwahlnummern im JSON-Format
+  jigasiNumberUrl: Jigasi số định dạng JSON
   jigasiProsodyDomain: Jigasi Prosody Domain
-  go: Los gehts!
-  moderator: Organisator auswählen
-  disallowFirefox: Firefox ist auf dem Jitsi-Meet Server deaktiviert
-  enforceE2e: Ende zu Ende erzwingen
-  allowIp: IPs oder IP Range welche der Konferenz beitreten dürfen
-  maxUser: Maximal Anzahl an Teilnehmenden
-  jitsiEventSyncUrl: Jitsi-Event-Sync Relais URL
-  disableFilmstripe: Filmstrip deaktivieren
-  disableChat: Chat deaktivieren
-  disableWhiteboard: Whiteboard deaktivieren
-  disableEtherpad: Etherpad deaktivieren
-  prefixRoomUidWithHash: Room-Uid mit Server-Hash prefixen
+  go: Đi nào!
+  moderator: Người tổ chức
+  disallowFirefox: Firefox bị vô hiệu hóa trên máy chủ
+  enforceE2e: Mã hoá
+  allowIp: IP hoặc dải IP được phép tham gia hội nghị
+  maxUser: Số lượng người tham gia tối đa
+  jitsiEventSyncUrl: Event-Sync Relais URL
+  disableFilmstripe: Vô hiệu Filmstrip
+  disableChat: Vô hiệu Chat
+  disableWhiteboard: Vô hiệu Whiteboard
+  disableEtherpad: Vô hiệu Etherpad
+  prefixRoomUidWithHash: Room-Uid tiền tố Server-Hash
 choice:
   tls: STARTTLS/TLS
   ssl: SSL
   none: Không
 placeholder:
   maxParticipants: Không giới hạn
-  chooseTime: Zeit und Datum auswählen
+  chooseTime: Chọn ngày và giờ

@@ -89,9 +89,7 @@ help:
   disableChat: Tắt và ẩn trò chuyện trong Jitsi
   disableWhiteboard: Tắt bảng trắng (Whiteboard) trong hội nghị
   disableEtherpad: Tắt Etherpad (vẽ) trong hội nghị
-  prefixRoomUidWithHash: Uid hội nghị đi kèm với sên máy chủ 
-và ID máy chủ có tiền tố là hàm băm. 
-Điều này có thể được sử dụng để phân biệt giữa các máy chủ V khác nhau trong máy chủ web nginx.
+  prefixRoomUidWithHash: uID hội nghị đi kèm với SeverID có tiền tố là hàm băm. Điều này có thể được sử dụng để phân biệt giữa các máy chủ web khác nhau.
 label:
   beitretenApp: Tham gia với App
   beitretenBrowser: Tham gia với trình duyệt

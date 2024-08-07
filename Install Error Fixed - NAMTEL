@@ -1,0 +1,116 @@
+1. Chạy update
+cd /var/www/admin
+php composer.phar update
+--------------------------------------------
+2.Sửa lỗi
+vim /var/www/admin/vendor/gjuric/i18n-routing-bundle/JMS/I18nRoutingBundle/Router/I18nRouter.php
+ */
+    class I18nRouter extends Router
+{
+    private $hostMap = array();
+    private $i18nLoaderId;
+    private $container;
+    /**  protected ?string $defaultLocale; */   - Sửa chỗ này thay bằng dòng dưới
+    protected $defaultLocale;
+    private $redirectToHost = true;
+    private $localeResolver;
+
+    /**
+     * Constructor.
+--------------------------------------------------------
+3. Cài đặt Mercure
+mkdir /bin/mercure/
+cd /bin/mercure/
+# https://mercure.rocks/docs/hub/install You get the latest binary from here: 
+# https://github.com/dunglas/mercure/releases
+wget https://github.com/dunglas/mercure/releases/download/v0.13.0/mercure_0.13.0_Linux_x86_64.tar.gz
+tar -xf mercure_0.13.0_Linux_x86_64.tar.gz
+------------------------------------------------------
+vim /etc/mercure/Caddyfile
+------------------------------------------------------
+# copy /etc/mercure/Caddyfile
+{
+#    auto_https off
+    log {
+        output file /var/log/mercure/mercure_access_prod.log {
+            level ERROR
+            roll_size 10mb
+            roll_keep 3
+            roll_keep_for 720h
+        }
+    }
+}
+{
+
+	{$GLOBAL_OPTIONS}
+}
+{$SERVER_NAME:localhost}
+route {
+	encode zstd gzip
+
+	mercure {
+		# Transport to use (default to Bolt)
+		# transport_url {$MERCURE_TRANSPORT_URL:bolt://mercure.db}
+		# Publisher JWT key
+		publisher_jwt {env.MERCURE_JWT_SECRET}
+		# Subscriber JWT key
+		# subscriber_jwt {env.MERCURE_SUBSCRIBER_JWT_KEY} {env.MERCURE_SUBSCRIBER_JWT_ALG}
+		# Permissive configuration for the development environment
+		anonymous
+		# Extra directives
+		{$MERCURE_EXTRA_DIRECTIVES}
+	}
+
+	respond /healthz 200
+
+	respond "Not Found" 404
+}
+-------------------------------------------------------------
+
+
+Create mercure service
+vim /etc/systemd/system/mercure.service
+
+[Unit]
+     Description=Mercure.Rocks service
+     After=network.target
+     StartLimitBurst=5
+     StartLimitIntervalSec=33
+[Service]
+     Type=simple
+     WorkingDirectory=/bin/mercure
+     Environment= MERCURE_JWT_SECRET='637e7f71da8343b34f5073d2460b92e6' SERVER_NAME=':4343'
+     # copy từ /var/www/admin/.env.prod.local
+     # MERCURE_SUBSCRIBER_JWT_KEY='secret_jwt_goes_here' SERVER_NAME=':3000'
+     ExecStart=/bin/mercure/mercure run -config /etc/mercure/Caddyfile
+     StandardOutput=file:/var/log/mercure.log
+     StandardError=file:/var/log/mercure.log
+     Restart=always
+     RestartSec=5
+
+     [Install]
+     WantedBy=multi-user.target
+----------------------------------------------------------------------------------
+
+To reload the daemon and restart the mercure daemon
+
+systemctl daemon-reload
+systemctl enable mercure.service
+systemctl start mercure.service
+systemctl restart mercure.service
+systemctl status mercure.service
+----------------------------------------------------------------------------------
+
+The jwt secret which is added here in the service must be the same as the JWT key in the .env.prod.local file MERCURE_JWT_SECRET=secret_jwt_goes_here
+---------------------------------------------------------------------------------
+Nhớ file (.env.prod.local) đặt PORT 4343 như trong /etc/systemd/system/mercure.service 
+
+### Start: App\Command\Installer\BasicConfig ###
+MERCURE_URL="http://localhost:4343/.well-known/mercure"
+MERCURE_PUBLIC_URL="https://admin.saza.au"
+MERCURE_JWT_SECRET="637e7f71da8343b34f5073d2460b92e6"
+WEBSOCKET_SECRET="637e7f71da8343b34f5073d2460b92e6"
+VICH_BASE="https://admin.saza.au"
+laF_baseUrl="https://admin.saza.au"
+### End: App\Command\Installer\BasicConfig ###
+-----------------------------------------------------------------------------------------
